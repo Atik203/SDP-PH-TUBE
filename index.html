@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PH tube</title>
+  </head>
+  <body>
+    <header class="w-11/12 mx-auto">
+      <div
+        class="navbar my-4 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0"
+      >
+        <div class="navbar-start">
+          <img src="image/Logo.png" alt="" />
+        </div>
+        <div>
+          <button
+            id="sort-by-view-button"
+            class="btn btn-primary border-none text-black font-medium text-center text-base bg-[#25252533] hover:bg-[#FF1F3D] hover:text-white"
+            title="High to Low"
+          >
+            Sort By View
+          </button>
+        </div>
+        <div class="navbar-end pr-14 md:pr-0">
+          <a
+            href="blog.html"
+            target="_blank"
+            class="btn bg-[#FF1F3D] text-white hover:bg-[#25252533] hover:text-black"
+            >Blog</a
+          >
+        </div>
+      </div>
+      <hr class="h-[2px] bg-[#cbcbcb]" />
+    </header>
+    <!-- main section -->
+    <main class="w-11/12 mx-auto my-8 md:my-12">
+      <div class="tab-container">
+        <div
+          class="tabs flex flex-wrap justify-center items-center mx-auto gap-2 md:gap-5 text-base"
+          id="tab-container"
+        >
+          <!-- <a class="tab">Home</a> -->
+        </div>
+      </div>
+      <!-- card -->
+      <div
+        id="card-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5"
+      >
+        <!-- card -->
+      </div>
+      <!-- no content -->
+      <div id="no-content" class="mt-5 md:mt-8 hidden">
+        <img class="mx-auto" src="image/Icon.png" alt="" />
+        <h3 class="text-[#171717] text-3xl text-center mt-5">
+          Oops!! Sorry, There is no <br />
+          content here
+        </h3>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
